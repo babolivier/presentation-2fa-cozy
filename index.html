@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Two-factor authentication in Cozy</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/cozy.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,43 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+                    <img src="assets/cozy-lg.svg" class="plain" width="50%" />
+                    <h3>Two-factor authentication in Cozy</h3>
+                </section>
+				<section>
+                    <img src="assets/swag-closer.jpg" width="250px" style="border-radius:250px" class="plain" />
+                    <h2>Brendan Abolivier</h2>
+                    <ul style="text-align:center;list-style:none;margin:0px;">
+                        <li>Student @ ISEN Brest</li>
+                        <li>Contributor @ Cozy</li>
+                    </ul>
+                    <p><small><a href="https://keybase.io/brenabolivier">keybase.io/BrenAbolivier</a> - <a href="http://www.brendanabolivier.com/">www.brendanabolivier.com</a></small></p>
+                </section>
+                <section>
+                    <section>
+                        <h3>Two-factor authentication</h3>
+                        <p>Because a single password isn't always enough to protect your data</p>
+                        <img src="assets/hackerman.gif" width="75%" />
+                    </section>
+                    <section>
+                        <h3>OTP : One Time Password</h3>
+                        <p>Infinite random passwords to rule them all</p>
+                        <img src="assets/typing.gif" width="75%" />                        
+                    </section>
+                    <section>
+                        <h3>Basic authentication + device</h3>
+                        <div class="fragment" style="width:50%;float:left"><img src="assets/yubikey.jpg" alt="Firefox" style="width:445px;" class="plain" /><br>
+                        <small>Specialized device (Yubikey...)</small></div>
+                        <div class="fragment" style="width:50%;float:right"><img src="assets/gauth.png" alt="Notepad++" style="width:250px;" class="plain" /><br>
+                        <small>Smartphone + app (Google Authenticator...)</small></div>
+                    </section>
+                </section>
+                <section>
+                    <h3>Cozy + Two-factor authentication</h3>
+                    <img src="assets/cozy-2fa.png" class="plain" />
+                    </table>
+                </section>
 			</div>
 		</div>
 
@@ -36,6 +71,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+                controls: false,
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
